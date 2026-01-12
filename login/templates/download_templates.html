@@ -1,0 +1,31 @@
+{% extends "layout/main_layout.html" %} 
+
+{% block page_title %}Download Templates{% endblock  %}
+
+{% block main_body %}
+
+            
+    <div class="displayuser h-96 w-96 bg-slate-200 p-5 rounded-2xl">
+        <div class="displayuser_in">
+            <h3 class="text-center font-bold text-xl py-3" style="border-bottom: 1px solid gray; ">Donwload templates</h3>
+            <div class="flex flex-col">
+                <a class="px-6 p-3 text-sky-700 underline mt-5" href="data:text/csv;charset=utf-8,ASIN,Keyword_1,Keyword_2,Keyword_3,Keyword_4,Keyword_5,Keyword_6,Keyword_7,Keyword_8,Keyword_9,Keyword_10,Keyword_11,Keyword_12,Keyword_13,Keyword_14,Keyword_15,Keyword_16,Keyword_17,Keyword_18,Keyword_19,Keyword_20,Keyword_21,Keyword_22,Keyword_23,Keyword_24,Keyword_25,Keyword_26,Keyword_27,Keyword_28,Keyword_29,Keyword_30,Keyword_31,Keyword_32,Keyword_33,Keyword_34,Keyword_35,Keyword_36,Keyword_37,Keyword_38,Keyword_39,Keyword_40,Keyword_41,Keyword_42,Keyword_43,Keyword_44,Keyword_45,Keyword_46,Keyword_47,Keyword_48,Keyword_49,Keyword_50" download="placement_finder.csv" target="_blank" >Placement Finder</a>
+            <a class="px-6 p-3 text-sky-700 underline" href="data:text/csv;charset=utf-8,ASIN" download="asin_audit.csv" target="_blank" >Asin Audit</a>
+            <a class="px-6 p-3 text-sky-700 underline" href="data:text/csv;charset=utf-8,ASIN" download="asin_data_capture.csv" target="_blank" >Asin Data Capture</a>
+            <a class="px-6 p-3 text-sky-700 underline" href="data:text/csv;charset=utf-8,KEYWORD" download="keyword_research.csv" target="_blank" >Keyword Research</a>
+            <a class="px-6 p-3 text-sky-700 underline" href="data:text/csv;charset=utf-8,IMAGE LINK" download="image_downloader.csv" target="_blank" >Image Downloader</a>
+        </div>
+    <div>
+    </div>
+    
+    <script>
+        const link = document.querySelector('a');
+        link.addEventListener('click',()=>{
+            
+        })
+        
+    </script>
+            
+    
+    {% endblock  %}
+    

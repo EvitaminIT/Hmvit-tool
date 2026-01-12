@@ -1,0 +1,24 @@
+{% extends "layout/main_layout.html" %}
+
+{% block page_title %}User Registration{% endblock  %}
+
+{% block main_body %}
+
+    {% comment %} <section class=""> {% endcomment %}
+    <div class="h-96 w-96 bg-slate-200 p-5 rounded-2xl">
+
+        <div class="displayuser_in">
+            <h3 class="text-center font-bold text-xl py-2" style="border-bottom: 1px solid gray; ">Download EvTool</h3>
+            <div class="flex flex-col justify-center items-center h-72">
+
+                <a href="{% url "download" method="linux" %}"><button class="btn btn-success my-4">Download for linux</button></a>
+                <a href="{% url "download" method="windows" %}"><button class="btn btn-success my-4">Download for windows</button></a>
+                <a href="{% url "installation_guide" %}"><button class="btn btn-info my-4">Installation Guide</button></a>
+                
+            </div>
+        </div>
+
+    </div>
+    {% comment %} </section> {% endcomment %}
+
+{% endblock  %}
