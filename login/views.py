@@ -209,8 +209,7 @@ class forget_password_VF(GenericAPIView):
             user = Users.objects.get(email = request.data.get('email').lower())
             if user:
 
-                message = f'<h4>Hello {user.name},</h4><p>Click here to <a href="http://10.20.40.234:8000/new_password?id={user.id}&token={user.user_token}">reset password</a></p>'
-
+                message = f'<h4>Hello {user.name},</h4><p>Click here to <a href="http://10.20.40.205:8000/new_password?id={user.id}&token={user.user_token}">reset password</a></p>'
                 subject = 'EvTool Reset Password Link!'
                 from_email = 'am273.evits@gmail.com'
                 recipient_list = [user.email]
